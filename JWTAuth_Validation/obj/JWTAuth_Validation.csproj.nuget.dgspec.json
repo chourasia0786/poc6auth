@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj": {}
+    "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj": {
+    "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
+        "projectUniqueName": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
         "projectName": "JWTAuth_Validation",
-        "projectPath": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
-        "packagesPath": "C:\\Users\\mandlik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\obj\\",
+        "projectPath": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
+        "packagesPath": "C:\\Users\\chouraas\\.nuget\\packages\\",
+        "outputPath": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mandlik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\chouraas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +38,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -55,6 +56,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.11.1, )"
+            },
+            "log4net_so": {
+              "target": "Package",
+              "version": "[1.2.11, )"
             }
           },
           "imports": [
@@ -76,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

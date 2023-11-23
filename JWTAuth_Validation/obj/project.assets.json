@@ -1,7 +1,16 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net7.0": {
+      "log4net_so/1.2.11": {
+        "type": "package",
+        "compile": {
+          "lib/log4net_so.dll": {}
+        },
+        "runtime": {
+          "lib/log4net_so.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.7": {
         "type": "package",
         "dependencies": {
@@ -242,6 +251,18 @@
     }
   },
   "libraries": {
+    "log4net_so/1.2.11": {
+      "sha512": "R9IIV/V3iLLiXgdAbcKH8FApcDBg4fj42pUNKMHk/FDth8gXQx77LvGnCRDmF580gZF+bc98cL/GmnJC5eyJfw==",
+      "type": "package",
+      "path": "log4net_so/1.2.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/log4net_so.dll",
+        "log4net_so.1.2.11.nupkg.sha512",
+        "log4net_so.nuspec"
+      ]
+    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.7": {
       "sha512": "80zYklKE6CZZswm5zjCUNbDx2Pavt45qfmVWLY1Heoe7GiJsPGGs9odgmsUFZ75bq4D6F4ZwK0LOam1TGUlHCg==",
       "type": "package",
@@ -695,39 +716,41 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net7.0": [
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.14.0",
       "Swashbuckle.AspNetCore >= 6.1.4",
-      "System.IdentityModel.Tokens.Jwt >= 6.11.1"
+      "System.IdentityModel.Tokens.Jwt >= 6.11.1",
+      "log4net_so >= 1.2.11"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mandlik\\.nuget\\packages\\": {}
+    "C:\\Users\\chouraas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
+      "projectUniqueName": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
       "projectName": "JWTAuth_Validation",
-      "projectPath": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
-      "packagesPath": "C:\\Users\\mandlik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mandlik\\Documents\\GRS\\POC_1\\AuthPoc\\JWTAuth_Validation\\obj\\",
+      "projectPath": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\JWTAuth_Validation.csproj",
+      "packagesPath": "C:\\Users\\chouraas\\.nuget\\packages\\",
+      "outputPath": "C:\\NusDemo\\poc6auth\\JWTAuth_Validation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mandlik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chouraas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -738,8 +761,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -756,6 +779,10 @@
           "System.IdentityModel.Tokens.Jwt": {
             "target": "Package",
             "version": "[6.11.1, )"
+          },
+          "log4net_so": {
+            "target": "Package",
+            "version": "[1.2.11, )"
           }
         },
         "imports": [
@@ -777,8 +804,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'log4net_so 1.2.11' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "log4net_so",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
